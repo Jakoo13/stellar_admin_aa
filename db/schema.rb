@@ -31,8 +31,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_04_181750) do
     t.integer "work_order_id"
     t.integer "admin_user_id"
     t.string "title"
-    t.boolean "is_done"
-    t.date "due_date"
+    t.string "stage"
+    t.date "appointment_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
