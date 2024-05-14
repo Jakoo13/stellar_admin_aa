@@ -64,8 +64,10 @@ end
 
 gem 'activeadmin'
 gem 'sass-rails'
-gem 'devise'
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
+gem 'devise'
+gem 'devise-jwt'
+gem 'rack-cors'
 
