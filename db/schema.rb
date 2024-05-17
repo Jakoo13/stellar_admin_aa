@@ -50,7 +50,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_14_150319) do
 
   create_table "visits", force: :cascade do |t|
     t.integer "work_order_id"
-    t.integer "admin_user_id"
+    t.integer "contractor_id"
     t.string "title"
     t.string "stage"
     t.date "appointment_date"
@@ -61,6 +61,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_14_150319) do
   create_table "work_orders", force: :cascade do |t|
     t.string "title"
     t.string "description"
+    t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,4 +1,4 @@
 class WorkOrder < ApplicationRecord
     has_many :visits
-    validates :title, :description, presence: true
+    validates :title, :description, :address, presence: true
 end
